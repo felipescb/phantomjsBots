@@ -97,7 +97,7 @@ var runBot = function(danames, thelist) {
 
     function bot() {
         return window.setInterval(function() {
-            if (thelist[window.helper] != "undefined") {
+            if (typeof thelist[window.helper] != "undefined") {
                 // if (window.helper < 4) {
                 if (thelist[window.helper] != "#") {
                     urlAmico.open(thelist[window.helper], function(status) {
@@ -123,7 +123,7 @@ var runBot = function(danames, thelist) {
                 console.log("Its over...");
                 phantom.exit();
             }
-        }, 10000);
+        }, 3000);
     }
     bot();
 }
