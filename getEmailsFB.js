@@ -123,7 +123,7 @@ var runBot = function(danames, thelist) {
                 console.log("Its over...");
                 phantom.exit();
             }
-        }, 3000);
+        }, 8000);
     }
     bot();
 }
